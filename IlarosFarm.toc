@@ -1,0 +1,39 @@
+## Interface: 30305
+## Title: IlarosFarm
+## Author: Ilaros
+## Version: 1.000
+## Notes: Farmfundorte von Mineralien, Kräutern, Fischschwärmen und Schätzen auf der Landkarte
+## SavedVariables: FarmConfig, FarmMarks, FarmRates, FarmIgnore, LibSwagData
+
+libs\Astrolabe\Load.xml
+libs\Configator\Load.xml
+libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
+libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
+
+IlarosFarm_Loc.enUS.lua
+IlarosFarm_Loc.deDE.lua
+
+# Base object definition
+IlarosFarm.lua
+IlarosFarm_Mark.lua
+IlarosFarm_Event.lua
+IlarosFarm_Store.lua
+IlarosFarm.xml
+IlarosFarm_Util.lua
+IlarosFarm_Notify.lua
+IlarosFarm_Notify.xml
+IlarosFarm_Zones.lua
+IlarosFarm_Api.lua
+IlarosFarm_Categories.lua
+IlarosFarm_Comm.lua
+IlarosFarm_Chat.lua
+IlarosFarm_Config.xml
+IlarosFarm_Config.lua
+IlarosFarm_Const.lua
+IlarosFarm_Convert.lua
+IlarosFarm_Rates.lua
+IlarosFarm_World.xml
+IlarosFarm_Mini.xml
+IlarosFarm_Report.lua
+IlarosFarm_Tooltip.lua
+IlarosFarm_Nodes.lua

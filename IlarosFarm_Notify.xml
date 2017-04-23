@@ -1,0 +1,63 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
+	<GameTooltip name="IlarosFarm_NotificationsTooltip" inherits="GameTooltipTemplate" parent="UIParent" enableMouse="true" toplevel="true" movable="true" frameStrata="TOOLTIP" hidden="true">
+		<Size>
+			<AbsDimension x="128" y="64"/>
+		</Size>
+		<Anchors>
+			<Anchor point="BOTTOMRIGHT">
+				<Offset>
+					<AbsDimension x="-10" y="80"/>
+				</Offset>
+			</Anchor>
+		</Anchors>
+		<Frames>
+			<Button name="IlarosFarm_NotificationsTooltipCloseButton">
+				<Size>
+					<AbsDimension x="32" y="32"/>
+				</Size>
+				<Anchors>
+					<Anchor point="TOPRIGHT">
+						<Offset>
+							<AbsDimension x="1" y="0"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						HideUIPanel(self:GetParent());
+					</OnClick>
+				</Scripts>
+				<NormalTexture file="Interface\Buttons\UI-Panel-MinimizeButton-Up"/>
+				<PushedTexture file="Interface\Buttons\UI-Panel-MinimizeButton-Down"/>
+				<HighlightTexture file="Interface\Buttons\UI-Panel-MinimizeButton-Highlight" alphaMode="ADD"/>
+			</Button>
+		</Frames>
+		<Scripts>
+			<OnLoad>
+				GameTooltip_OnLoad(self);
+				self:SetPadding(16);
+				self:RegisterForDrag("LeftButton");
+				IlarosFarm.Notifications.OnLoad(self)
+			</OnLoad>
+			<OnShow>
+				IlarosFarm.Notifications.OnShow(self)
+			</OnShow>
+			<OnHide>
+				IlarosFarm.Notifications.OnHide(self)
+			</OnHide>
+			<OnUpdate>
+				IlarosFarm.Notifications.OnUpdate(self, elapsed)
+			</OnUpdate>
+			<OnEvent>
+				IlarosFarm.Notifications.OnEvent(self, event, ...)
+			</OnEvent>
+			<OnDragStart>
+				self:StartMoving();
+			</OnDragStart>
+			<OnDragStop>
+				self:StopMovingOrSizing();
+				ValidateFramePosition(self);
+			</OnDragStop> 
+		</Scripts>
+	</GameTooltip>
+</Ui>

@@ -1,0 +1,90 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
+	<Script file = "IlarosFarm_World.lua"/>
+	
+	<!-- World Map Display Templates -->
+	<Frame name="IlarosFarmMapOverlayTemplate" hidden="true" virtual="true" setAllPoints="true">
+		<Scripts>
+			<OnLoad>
+				self:SetFrameLevel(self:GetParent():GetFrameLevel())
+				self:SetWidth(WorldMapButton:GetWidth())
+				self:SetHeight(WorldMapButton:GetHeight())
+			</OnLoad>
+			<OnHide>
+				IlarosFarm.MapNotes.MapOverlayFrame_OnHide(self)
+			</OnHide>
+		</Scripts>
+	</Frame>
+	<Button name="FarmMainTemplate" hidden="true" virtual="true">
+		<Size>
+			<AbsDimension x="12" y="12"/>
+		</Size>
+		<Anchors>
+			<Anchor point="CENTER"/>
+		</Anchors>
+		<Scripts>
+			<OnLoad>
+				self:SetFrameLevel(self:GetParent():GetFrameLevel() + 1)
+			</OnLoad>
+			<OnEnter>
+				IlarosFarm.MapNotes.MapNoteOnEnter(self)
+			</OnEnter>
+			<OnLeave>
+				IlarosFarm_WorldMapTooltip:Hide()
+			</OnLeave>
+		</Scripts>
+		<Layers>
+			<Layer level="ARTWORK">
+				<Texture name="$parentTexture" file="Interface\AddOns\IlarosFarm\images\test"/>
+			</Layer>
+		</Layers>
+	</Button>
+
+	<GameTooltip name="IlarosFarm_WorldMapTooltip" frameStrata="TOOLTIP" hidden="true" parent="WorldMapFrame" inherits="GameTooltipTemplate">
+		<Scripts>
+			<OnLoad>
+				self:SetBackdropBorderColor(TOOLTIP_DEFAULT_COLOR.r, TOOLTIP_DEFAULT_COLOR.g, TOOLTIP_DEFAULT_COLOR.b);
+				self:SetBackdropColor(TOOLTIP_DEFAULT_BACKGROUND_COLOR.r, TOOLTIP_DEFAULT_BACKGROUND_COLOR.g, TOOLTIP_DEFAULT_BACKGROUND_COLOR.b);
+				self.shoppingTooltips = { WorldMapCompareTooltip1, WorldMapCompareTooltip2, WorldMapCompareTooltip3 };
+			</OnLoad>
+		</Scripts>
+	</GameTooltip>
+
+	<!-- Parent Frame for all World Map Note Objects -->
+	<Frame name="IlarosFarmMapOverlayParent" inherits="IlarosFarmMapOverlayTemplate" parent="WorldMapButton">
+		<Scripts>
+			<OnShow>
+				IlarosFarm.MapNotes.MapDraw()
+			</OnShow>
+		</Scripts>
+	</Frame>
+
+	<!-- Button to show/hide icons on world map -->
+	<Button name="IlarosFarm_WorldMapDisplay" inherits="UIPanelButtonTemplate" text="Show items" parent="WorldMapFrame" toplevel="true">
+		<Size>
+			<AbsDimension x="180" y="25"/>
+		</Size>
+		<Anchors>
+			<Anchor point="TOPLEFT" relativeTo="WorldMapPositioningGuide" relativePoint="TOPLEFT">
+				<Offset>
+					<!-- this should be the same as the full size map numbers in the OnShow script -->
+					<AbsDimension x="4" y="-4"/>
+				</Offset>
+			</Anchor>
+		</Anchors>
+		<Scripts>
+			<OnLoad>
+				self:SetScale(0.7)
+			</OnLoad>
+			<OnShow>
+				if not ( GetCVarBool("miniWorldMap") ) then
+					self:SetPoint("TOPLEFT", WorldMapPositioningGuide, "TOPLEFT", 4, -4);
+				else
+					self:SetPoint("TOPLEFT", WorldMapTitleButton, "TOPLEFT", 8, -3);
+				end
+			</OnShow>
+			<OnClick>
+				IlarosFarm.MapNotes.ToggleDisplay()
+			</OnClick>
+		</Scripts>
+	</Button>
+</Ui>

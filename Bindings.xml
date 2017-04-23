@@ -1,0 +1,6 @@
+<Bindings>
+	<Binding name="ILAROSFARM_TOGGLE_OPTIONS_DIALOG" header="ILAROSFARM">
+		IlarosFarm.Config.ToggleOptions()
+	</Binding>
+</Bindings>
+

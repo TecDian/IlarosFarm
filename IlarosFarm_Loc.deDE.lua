@@ -1,0 +1,534 @@
+﻿----------------------------------------------------------------------------
+-- IlarosFarm
+-- Modul für deutsche Texte
+----------------------------------------------------------------------------
+
+-- Version deDE
+local region = GetLocale();
+if (region == "deDE") then
+    -- die Namen müssen den tatsächlich im Spiel verwendeten lokalisierten Namen entsprechen, da sie die Suchbegriffe darstellen
+    Nodes.Names = {
+        -- Bergbau, Erze
+        ["Adamantitvorkommen"] = 181556, -- Adamantite Deposit
+        ["Dunkeleisenvorkommen"] = 165658, -- Dark Iron Deposit
+        ["Echtsilbervorkommen"] = 2047, -- Truesilver Deposit, auch 150081, 181108
+        ["Eisenvorkommen"] = 1735, -- Iron Deposit
+        ["Goldader"] = 1734, -- Gold Vein, auch 150080, 181109
+        ["Induriummineralader"] = 19903, -- Indurium Mineral Vein
+        ["Geringes Blutsteinvorkommen"] = 2653, -- Lesser Bloodstone Deposit
+        ["Khoriumader"] = 181557, -- Khorium Vein
+        ["Kleine Thoriumader"] = 324, -- Small Thorium Vein, auch 150082, 176643
+        ["Kobaltvorkommen"] = 189978, -- Cobalt Deposit
+        ["Kupferader"] = 1731, -- Copper Vein, auch 2055, 3763, 103713, 181248
+        ["Mithrilvorkommen"] = 2040, -- Mithril Deposit, auch 150079, 176645
+        ["Netheritvorkommen"] = 185877, -- Nethercite Deposit
+        ["Pyrophormineralvorkommen"] = 1610, -- Incendicite Mineral Vein, auch 1667
+        ["Reiche Thoriumader"] = 175404, -- Rich Thorium Vein
+        ["Reiches Adamantitvorkommen"] = 181569, -- Rich Adamantite Deposit, auch 181570
+        ["Reiches Kobaltvorkommen"] = 189979, -- Rich Cobalt Deposit
+        ["Reiches Saronitvorkommen"] = 189981, -- Rich Saronite Deposit
+        ["Saronitvorkommen"] = 189980, -- Saronite Deposit
+        ["Schlammbedeckte Goldader"] = 73941, -- Ooze Covered Gold Vein
+        ["Schlammbedeckte reiche Thoriumader"] = 177388, -- Ooze Covered Rich Thorium Vein
+        ["Schlammbedeckte Silberader"] = 73940, -- Ooze Covered Silver Vein
+        ["Schlammbedeckte Thoriumader"] = 123848, -- Ooze Covered Thorium Vein
+        ["Schlammbedecktes Echtsilbervorkommen"] = 123309, -- Ooze Covered Truesilver Deposit
+        ["Schlammbedecktes Mithrilvorkommen"] = 123310, -- Ooze Covered Mithril Deposit
+        ["Silberader"] = 1733, -- Silver Vein, auch 105569
+        ["Teufelseisenvorkommen"] = 181555, -- Fel Iron Deposit
+        ["Titanader"] = 191133, -- Titanium Vein
+        ["Thoriumader der Hakkari"] = 180215, -- Hakkari Thorium Vein
+        ["Zinnader"] = 1732, -- Tin Vein, auch 2054, 103711, 181249
+        -- Kräuterkunde, Kräuter
+        ["Alptraumranke"] = 181280, -- Nightmare Vine, auch 181285
+        ["Arthas' Tränen"] = 142141, -- Arthas' Tears
+        ["Bergsilbersalbei"] = 176586, -- Mountain Silversage, auch 176640, 180166
+        ["Beulengras"] = 1622, -- Bruiseweed
+        ["Blassblatt"] = 2042, -- Fadeleaf
+        ["Blindkraut"] = 142143, -- Blindweed, auch 183046
+        ["Blutdistel"] = 181166, -- Bloodthistle
+        ["Eisdorn"] = 190172, -- Icethorn
+        ["Eiskappe"] = 176588, -- Icecap
+        ["Erdwurzel"] = 1619, -- Earthroot, auch 3726
+        ["Feuerblüte"] = 2866, -- Firebloom
+        ["Feuerdorn"] = 191303, -- Firethorn, auch 191304
+        ["Flammenkappe"] = 181276, -- Flame Cap
+        ["Friedensblume"] = 1618, -- Peacebloom, auch 3724
+        ["Frostlotus"] = 190176, -- Frost Lotus
+        ["Gefrorenes Kraut"] = 190175, -- Frozen Herb, auch 190174, 190175
+        ["Geisterpilz"] = 142144, -- Ghost Mushroom
+        ["Golddorn"] = 2046, -- Goldthorn
+        ["Goldener Sansam"] = 176583, -- Golden Sansam, auch 176638, 180167
+        ["Goldklee"] = 189973, -- Goldclover
+        ["Grabmoos"] = 1628, -- Grave Moss
+        ["Gromsblut"] = 142145, -- Gromsblood, auch 176637
+        ["Khadgars Schnurrbart"] = 2043, -- Khadgar's Whisker
+        ["Königsblut"] = 1624, -- Kingsblood
+        ["Lebenswurz"] = 2041, -- Liferoot
+        ["Lichblüte"] = 190171, -- Lichbloom
+        ["Lila Lotus"] = 142140, -- Purple Lotus, auch 180165
+        ["Maguskönigskraut"] = 1620, -- Mageroyal, auch 3727
+        ["Manadistel"] = 181281, -- Mana Thistle, auch 181284
+        ["Netherblüte"] = 181279, -- Netherbloom, auch 181282
+        ["Netherstaubbusch"] = 185881, -- Netherdust Bush
+        ["Pestblüte"] = 176587, -- Plaguebloom, auch 176641
+        ["Schlangenzunge"] = 191019, -- Adder's Tongue
+        ["Schwarzer Lotus"] = 176589, -- Black Lotus
+        ["Silberblatt"] = 1617, -- Silverleaf, auch 3725
+        ["Sonnengras"] = 142142, -- Sungrass, auch 176636, 180164
+        ["Talandras Rose"] = 190170, -- Talandra's Rose
+        ["Terozapfen"] = 181277, -- Terocone
+        ["Teufelsgras"] = 181270, -- Felweed, auch 183044
+        ["Tigerlilie"] = 190169, -- Tiger Lily
+        ["Traumblatt"] = 176584, -- Dreamfoil, auch 176639, 180168
+        ["Traumwinde"] = 181271, -- Dreaming Glory, auch 181272, 183045
+        ["Urflechte"] = 181278, -- Ancient Lichen
+        ["Wilddornrose"] = 1621, -- Briarthorn, auch 3729
+        ["Wildstahlblume"] = 1623, -- Wild Steelbloom
+        ["Winterbiss"] = 2044, -- Wintersbite
+        ["Würgetang"] = 2045, -- Stranglekelp
+        ["Zottelkappe"] = 181275, -- Ragveil, auch 183043
+        -- Schätze
+        ["Adamantitbeschlagene Truhe"] = 181802, -- Adamantite Bound Chest
+        ["Beschlagene Adamantittruhe"] = 184936, -- Bound Adamantite Chest, auch 184938, 184940
+        ["Beschlagene Teufelseisentruhe"] = 184931, -- Bound Fel Iron Chest, auch 184932, 184934
+        ["Blauer Machtkristall"] = 164658, -- Blue Power Crystal, auch 164778
+        ["Blut von Helden"] = 176213, -- Blood of Heroes, auch 176214
+        ["Blutblütensprössling"] = 164958, -- Bloodpetal Sprout
+        ["Bunt gefärbtes Ei"] = 113768, -- Brightly Colored Egg, auch 113769, 113770, 113771, 113772
+        ["Durchnässte Schließkiste"] = 179487, -- Waterlogged Footlocker, auch 179489, 179491
+        ["Ei der Netherschwingen"] = 185915, -- Netherwing Egg
+        ["Erdhaufen von Un'Goro"] = 157936, -- Un'Goro Dirt Pile
+        ["Fass Melonensaft"] = 3659, -- Barrel of Melon Juice
+        ["Fass mit Milch"] = 3705, -- Barrel of Milk
+        ["Fass mit süßem Nektar"] = 3706, -- Barrel of Sweet Nectar
+        ["Gelber Machtkristall"] = 164661, -- Yellow Power Crystal, auch 164781
+        ["Geldkassette der Allianz"] = 3714, -- Alliance Strongbox, auch 4095, 105570
+        ["Geldkassette des Bukaniers"] = 123330, -- Buccaneer's Strongbox, auch 123331, 123332, 123333
+        ["Gesäuberte Liedblume"] = 164882, -- Cleansed Songflower, auch 171940, 171943, 174610, 174612, 174613, 174614, 174615, 174714, 174715
+        ["Gesäuberte Peitscherwurzel"] = 174622, -- Cleansed Whipper Root, auch 164883, 174623, 174624, 174625, 174687
+        ["Gesäuberte Windblüte"] = 164884, -- Cleansed Windblossom, auch 173326, 174616, 174617, 174618, 174619, 174620, 174621, 174710, 174711
+        ["Gesäuberter Nachtdrache"] = 164881, -- Cleansed Night Dragon, auch 173325, 174609, 174685
+        ["Glühkappe"] = 182053, -- Glowcap
+        ["Grabtruhe"] = 181665, -- Burial Chest
+        ["Große Dunkelholztruhe"] = 131979, -- Large Darkwood Chest
+        ["Große eisenbeschlagene Truhe"] = 74447, -- Large Iron Bound Chest, auch 75295, 75296, 75297
+        ["Große mithrilbeschlagene Truhe"] = 131978, -- Large Mithril Bound Chest, auch 153468, 153469
+        ["Große ramponierte Truhe"] = 75293, -- Large Battered Chest
+        ["Große robuste Truhe"] = 74448, -- Large Solid Chest, auch 75298, 75299, 75300, 153462, 153463, 153464
+        ["Grüner Machtkristall"] = 164659, -- Green Power Crystal, auch 164779
+        ["Immerfrostsplitter"] = 193997, -- Everfrost Chip
+        ["Kasten mit verschiedenen Ersatzteilen"] = 19019, -- Box of Assorted Parts, auch 19020
+        ["Lädierte Truhe"] = 2843, -- Battered Chest, auch 2849, 106318, 106319,
+        ["Moosbedeckte Schließkiste"] = 179493, -- Mossy Footlocker, auch 179497
+        ["Nahrungsmittelkiste"] = 3662, -- Food Crate, auch 3690, 3691, 3693, 3694, 3695, 3707, 3710, 3719, 153470, 153471, 153472, 153473
+        ["Primitive Truhe"] = 184793, -- Primitive Chest
+        ["Ramponierte Schließkiste"] = 179486, -- Battered Footlocker, auch 179488, 179490
+        ["Ramponierte Truhe"] = 2844, -- Tattered Chest, auch, 2845, 2846, 2847, 3715, 4096, 105578, 105579, 105581, 111095
+        ["Riesenmuschel"] = 2744, -- Giant Clam, auch 19017, 19018, 179264
+        ["Robuste Teufelseisentruhe"] = 184930, -- Solid Fel Iron Chest, auch 184933, 184935
+        ["Robuste Truhe"] = 2850, -- Solid Chest, auch 2852, 2855, 2857, 4149, 153451, 153453, 153454
+        ["Roter Machtkristall"] = 164660, -- Red Power Crystal, auch 164780
+        ["Rüstungskiste"] = 3660, -- Armor Crate, auch 3702, 3703
+        ["Schalentierfalle"] = 176582, -- Shellfish Trap, auch 176635
+        ["Scharlachrote Schließkiste"] = 179498, -- Scarlet Footlocker, auch 191087
+        ["Schwere Teufelseisentruhe"] = 181800, -- Heavy Fel Iron Chest
+        ["Teufelseisentruhe"] = 181798, -- Fel Iron Chest
+        ["Teufelsstahltruhe"] = 181804, -- Felsteel Chest
+        ["Übungsschließkassette"] = 178244, -- Practice Lockbox, auch 178245, 178246
+        ["Verbeulte Schließkiste"] = 179492, -- Dented Footlocker, auch 179494, 179496, 184741
+        ["Versteckte Geldkassette"] = 2039, -- Hidden Strongbox
+        ["Verstreute Kiste"] = 28604, -- Scattered Crate
+        ["Vorratskiste der Horde"] = 142191, -- Horde Supply Crate, auch 178442
+        ["Waffenkiste"] = 3661, -- Weapon Crate, auch 3689, 3704, 181107
+        ["Wasserfass"] = 3658, -- Water Barrel, auch 186234
+        ["Weidentruhe"] = 184740, -- Wicker Chest
+        -- Fische
+        ["Boreanische Galeere"] = 541805, -- Borean Man O' War
+        ["Deviatfisch"] = 506522, -- Deviate Fish
+        ["Dunkelklauenhummer"] = 513888, -- Darkclaw Lobster
+        ["Eisblauflosse"] = 527437, -- Icefin Bluefish
+        ["Engelsdrachenfisch"] = 541807, -- Dragonfin Angelfish
+        ["Fangzahnhering"] = 541810, -- Fangtooth Herring
+        ["Feigenschimmers Matschflosser"] = 527435, -- Figluster's Mudfish
+        ["Feuerflossenschnapper"] = 506359, -- Firefin Snapper
+        ["Gesprenkelter Leckerfisch"] = 519807, -- Speckled Tastyfish
+        ["Glasflossenelritze"] = 541814, -- Glassfin Minnow
+        ["Goldener Stachelflosser"] = 527438, -- Golden Darter
+        ["Grimmiger Flusskrebs"] = 527439, -- Furious Crawdad
+        ["Großer roher Machtfisch"] = 513893, -- Large Raw Mightfish
+        ["Imperialer Mantarochen"] = 541802, -- Imperial Manta Ray
+        ["Mondlichtsepia"] = 541801, -- Moonglow Cuttlefish
+        ["Muschelrückengroppe"] = 541806, -- Musselback Sculpin
+        ["Nesselfisch"] = 541813, -- Nettlefish
+        ["Öliges Schwarzmaul"] = 506358, -- Oily Blackmouth
+        ["Rohe Mithrilkopfforelle"] = 508365, -- Raw Mithril Head Trout
+        ["Roher glänzender Kleinfisch"] = 506291, -- Raw Brilliant Smallfish
+        ["Roher großer Weisenfisch"] = 521153, -- Raw Greater Sagefish
+        ["Roher langzahniger Matschschnapper"] = 506289, -- Raw Longjaw Mud Snapper
+        ["Roher Nachtflossenschnapper"] = 513759, -- Raw Nightfin Snapper
+        ["Roher Rotkiemen"] = 513758, -- Raw Redgill
+        ["Roher Sommerbarsch"] = 513756, -- Raw Summer Bass
+        ["Roher Sonnenschuppenlachs"] = 513760, -- Raw Sunscale Salmon
+        ["Roher Weisenfisch"] = 521071, -- Raw Sagefish
+        ["Stachelkiemenforelle"] = 527422, -- Barbed Gill Trout
+        ["Steinschuppenaal"] = 513422, -- Stonescale Eel
+        ["Tiefseemonsterbauch"] = 541800, -- Deep Sea Monsterbelly
+        ["Tüpfelteufelsfinne"] = 527425, -- Spotted Feltail
+        ["Winterlachs"] = 541809, -- Glacial Salmon
+        ["Zangarischer Sporenfisch"] = 527429, -- Zangarian Sporefish
+        ["Zulianischer Matschstinker"] = 519975, -- Zulian Mudskunk
+        ["Dampfpumpentrümmer"] = 527443, -- Steam Pump Debris
+        ["Eisenbeschlagener Koffer"] = 521150, -- Iron Bound Trunk
+        ["Elementarwasser"] = 507070, -- Elemental Water
+        ["Gut versiegeltes Gehäuse"] = 520708, -- Tightly Sealed Trunk
+        ["Mithrilbeschlagener Koffer"] = 521228, -- Mithril Bound Trunk
+        ["Schwarzer Rumsey Rum"] = 521151, -- Rumsey Rum Black Label
+        ["Wasserdichter Koffer"] = 521113, -- Watertight Trunk
+        ["Wasserpartikel"] = 522578, -- Mote of Water
+        -- Fischschwärme
+        ["Brackwasserschwarm"] = 182954, -- Brackish Mixed School
+        ["Ein Schwarm Blauflossen"] = 182959, -- Bluefish School
+        ["Ein Schwarm boreanischer Galeeren"] = 192051, -- Borean Man O' War School
+        ["Ein Schwarm Deviatfische"] = 180658, -- School of Deviate Fish
+        ["Ein Schwarm Engelsdrachenfische"] = 192048, -- Dragonfin Angelfish School
+        ["Ein Schwarm Fangzahnheringe"] = 192049, -- Fangtooth Herring School
+        ["Ein Schwarm Feuerflossenschnapper"] = 180683, -- Firefin Snapper School, auch
+        -- ["Ein spärlicher Schwarm Feuerflossenschnapper"] = 180657, -- Sparse Firefin Snapper School
+        -- ["Ein ergiebiger Schwarm Feuerflossenschnapper"] = 180902, -- Abundant Firefin Snapper School
+        -- ["Ein wimmelnder Schwarm Feuerflossenschnapper"] = 180752, -- Teeming Firefin Snapper School
+        -- ["Ölfleck"] = 180661, -- Oil Spill
+        ["Ein Schwarm Glasflossenelritzen"] = 192059, -- Glassfin Minnow School
+        ["Ein Schwarm großer Weisenfische"] = 180684, -- Greater Sagefish School, auch
+        --  ["Seltsamer Teich"] = 184845, -- Strange Pool, auch 184956
+        ["Ein Schwarm imperialer Mantarochen"] = 192052, -- Imperial Manta Ray School
+        ["Ein Schwarm Leckerfische"] = 180248, -- School of Tastyfish
+        ["Ein Schwarm Matschflosser"] = 182958, -- Mudfish School
+        ["Ein Schwarm Mondlichtsepia"] = 192054, -- Moonglow Cuttlefish School
+        ["Ein Schwarm Muschelrückengroppen"] = 192046, -- Musselback Sculpin School
+        ["Ein Schwarm Nesselfische"] = 192057, -- Nettlefish School
+        ["Ein Schwarm öliger Schwarzmaulfische"] = 180682, -- Oily Blackmouth School, auch 
+        -- ["Ein spärlicher Schwarm öliger Schwarzmaulfische"] = 180664, -- Sparse Oily Blackmouth School
+        -- ["Ein kleiner Schwarm öliger Schwarzmaulfische"] = 180582, -- Lesser Oily Blackmouth School
+        -- ["Ein ergiebiger Schwarm öliger Schwarzmaulfische"] = 180900, -- Abundant Oily Blackmouth School
+        -- ["Ein wimmelnder Schwarm öliger Schwarzmaulfische"] = 180750, -- Teeming Oily Blackmouth School
+        ["Ein Schwarm Sporenfische"] = 182953, -- Sporefish School
+        ["Ein Schwarm Stachelflosser"] = 182956, -- School of Darter
+        ["Ein Schwarm Tiefseemonsterbäuche"] = 192053, -- Deep Sea Monsterbelly School
+        ["Ein Schwarm Weisenfische"] = 180663, -- Sagefish School, auch
+        -- ["Ein kleiner Schwarm Weisenfische"] = 180656, -- Lesser Sagefish School
+        ["Ein Schwarm Winterlachse"] = 192050, -- Glacial Salmon School
+        ["Hochlandschwarm"] = 182957, -- Highland Mixed School
+        ["Schlammiges aufgewühltes Gewässer"] = 180369, -- Muddy Churning Waters
+        ["Steinschuppenaalschwarm"] = 180712, -- Stonescale Eel Swarm
+        ["Blutsegelwrackteile"] = 180901, -- Bloodsail Wreckage
+        ["Reines Wasser"] = 182951, -- Pure Water
+        ["Schiffswrackteile"] = 180662, -- Schooner Wreckage
+        ["Schwimmende Trümmer"] = 180655, -- Floating Debris
+        ["Schwimmende Wrackteile"] = 180685, -- Waterlogged Wreckage
+        ["Stelle mit Elementarwasser"] = 180753, -- Patch of Elemental Water
+        ["Treibende Wrackteile"] = 180751, -- Floating Wreckage
+        ["Treibgut der Dampfpumpe"] = 182952, -- Steam Pump Flotsam
+    }
+
+    -- Fertigkeiten
+    FarmText_SKL = {
+        ["HERB"] = "Kräuterkunde",
+        ["MINE"] = "Bergbau",
+        ["FISH"] = "Angeln",
+        ["OPEN"] = "Schätze",
+    }
+
+    -- lokalisierte CategoryNames, die nicht mit IlarosFarm.Node.Names identisch sind (wozu?)
+    FarmText_HERB_NETHERDUST = "Netherstaubpollen"
+    FarmText_ORE_ADAMANTITE  = "Adamantit"
+    FarmText_ORE_BLOODSTONE  = "Geringer Blutstein"
+    FarmText_ORE_COPPER  = "Kupfer"
+    FarmText_ORE_DARKIRON    = "Dunkeleisen"
+    FarmText_ORE_FELIRON = "Teufelseisen"
+    FarmText_ORE_GOLD    = "Gold"
+    FarmText_ORE_INCENDICITE = "Pyrophor"
+    FarmText_ORE_INDURIUM    = "Indurium"
+    FarmText_ORE_IRON    = "Eisen"
+    FarmText_ORE_KHORIUM = "Khorium"
+    FarmText_ORE_MITHRIL = "Mithril"
+    FarmText_ORE_NETHERCITE  = "Netherit"
+    FarmText_ORE_OBSIDIAN    = "Obsidian"
+    FarmText_ORE_RADAMANTITE = "Reiches Adamantit"
+    FarmText_ORE_RTHORIUM    = "Reiches Thorium"
+    FarmText_ORE_SILVER  = "Silber"
+    FarmText_ORE_THORIUM = "Thorium"
+    FarmText_ORE_TIN = "Zinn"
+    FarmText_ORE_TRUESILVER  = "Echtsilber"
+    FarmText_TREASURE_BARREL = "Fass"
+    FarmText_TREASURE_BLOODPETAL = "Blutblütensprösslinge"
+    FarmText_TREASURE_BOX    = "Kiste"
+    FarmText_TREASURE_CASK   = "Fässlein"
+    FarmText_TREASURE_CHEST  = "Schatztruhe"
+    FarmText_TREASURE_CLAM   = "Riesenmuschel"
+    FarmText_TREASURE_CRATE  = "Kiste"
+    FarmText_TREASURE_FOOTLOCKER = "Schließkiste"
+    FarmText_TREASURE_GLOWCAP    = "Glühkappe"
+    FarmText_TREASURE_NIGHTDRAGON    = "Nachtdrachenodem"
+    FarmText_TREASURE_POWERCRYST = "Machtkristall"
+    FarmText_TREASURE_SHELLFISHTRAP  = "Schalentierfalle"
+    FarmText_TREASURE_SONGFLOWER = "Liedblume"
+    FarmText_TREASURE_UNGOROSOIL = "Erde von Un'Goro"
+    FarmText_TREASURE_WHIPPERROOT    = "Peitscherwurzelknollen"
+    FarmText_TREASURE_WINDBLOSSOM    = "Windblütenbeeren"
+    FarmText_FISH_GLASSFINMINNOW = "Glasflossenelritze"
+
+    -- Tooltips
+    FarmText_TT1 = "%d zusätzlich gefunden"
+    FarmText_TT2 = "Gesammelt: %d"
+    FarmText_TT3 = "Entfernung: %0.2f Meter"
+    FarmText_TT4 = "Zuletzt besucht: %s"
+    FarmText_TT5 = "Durchschnittliche Häufigkeit:"
+    FarmText_TT6 = "Herkunft: %s"
+    FarmText_TT7 = "Importiert"
+    FarmText_TT8 = "Fertigkeit zu niedrig"
+
+    -- Zeitangaben
+    FarmText_TStrS1 = "Sek."
+    FarmText_TStrS2 = "Sek."
+    FarmText_TStrM1 = "Min."
+    FarmText_TStrM2 = "Min."
+    FarmText_TStrH1 = "Std."
+    FarmText_TStrH2 = "Std."
+    FarmText_TStrD1 = "Tag"
+    FarmText_TStrD2 = "Tage"
+    FarmText_TStrW1 = "Wo."
+    FarmText_TStrW2 = "Wo."
+
+    -- Konfigurationsfenster
+    FarmText_CNF1 = "Verfolgung"
+    FarmText_CNF2 = "Fundstellen"
+    FarmText_CNF3 = "Untersuchung"
+    FarmText_CNF4 = "Austausch"
+    FarmText_CNF5 = "Profile"
+    FarmText_CNFB = "Filter"
+    FarmText_CNF6 = "Filteroptionen für Bergbau"
+    FarmText_CNF7 = "Filteroptionen für Kräuterkunde"
+    FarmText_CNF8 = "Filteroptionen für Angeln"
+    FarmText_CNF9 = "Filteroptionen für Schatzsuche"
+    FarmText_CNFC = "Information"
+    FarmText_CNF10 = "Hilfe"
+    FarmText_CNF11 = "Version"
+    
+    FarmText_CNF1H1 = "Verfolgung auf der Weltkarte"
+    FarmText_CNF1H2 = "Verfolgung auf der Minikarte"
+    FarmText_CNF1H3 = "Anmerkung"
+    FarmText_CNF2H1 = "Weltkartenoptionen"
+    FarmText_CNF2H2 = "Minikartenoptionen"
+    FarmText_CNF3H1 = "entfernte Stellen"
+    FarmText_CNF3H2 = "Stellen in Sichtweite"
+    FarmText_CNF3H3 = "anonyme Stellen"
+    FarmText_CNF3H4 = "Stellen nach Besuch"
+    FarmText_CNF4H1 = "Austausch mit Gilde"
+    FarmText_CNF4H2 = "Austausch mit Gruppe/Schlachtzug"
+    FarmText_CNF4H3 = "Eigene Funde"
+    FarmText_CNF4H4 = "Austausch-Ausschlussliste"
+    FarmText_CNF5H1 = "Profil wählen oder löschen"
+    FarmText_CNF5H2 = "Profil erzeugen oder ersetzen"
+    FarmText_CNF6H = "Fundorte von Mineralien, die angezeigt werden"
+    FarmText_CNF7H = "Fundorte von Kräutern, die angezeigt werden"
+    FarmText_CNF8H = "Fundorte von Fischschwärmen, die angezeigt werden"
+    FarmText_CNF9H = "Fundorte von Schätzen, die angezeigt werden"
+    FarmText_CNF10H1 = "Chat-Kommandos"
+    FarmText_CNF10H2 = "Tastaturbelegung"
+    FarmText_CNF11H1 = "Version"
+    FarmText_CNF11H2 = "Vorstellung"
+    FarmText_CNF11H3 = "Willkommensmeldung"
+
+    FarmText_CNF1SON = "Erz-Stellen zeigen"
+    FarmText_CNF1SHN = "Pflanzen-Stellen zeigen"
+    FarmText_CNF1STN = "Schatz-Stellen zeigen"
+    FarmText_CNF1SFN = "Fisch-Stellen zeigen"
+    FarmText_CNF1MO = "nur für Bergarbeiter"
+    FarmText_CNF1HO = "nur für Pflanzenkundler"
+    FarmText_CNF1TO = "nur bei aktiver Suche"
+    FarmText_CNF1A  = "alle"
+    FarmText_CNF1NT = "\"Alle\" bewirkt, dass die Filter für diese Kategorie ignoriert und alle Stellen angezeigt werden."
+    FarmText_CNF2DW = "Fundstellen auf der Weltkarte anzeigen"
+    FarmText_CNF2DM = "Fundstellen auf der Minikarte anzeigen"
+    FarmText_CNF2DT = "Tooltips anzeigen"
+    FarmText_CNF2DB = "Minikarten-Knopf anzeigen"
+    FarmText_CNF2S1 = "Anzeige: %d Stellen"
+    FarmText_CNF2S2 = "Transparenz: %d%%"
+    FarmText_CNF2S3 = "Icongröße: %d"
+    FarmText_CNF2S4 = "Radius: %d m"
+    FarmText_CNF2S5 = "Winkel: %d°"
+    FarmText_CNF2S6 = "Abstand: %d"
+    FarmText_CNF2O1 = "Fundanzahl anzeigen"
+    FarmText_CNF2O2 = "Fundherkunft anzeigen"
+    FarmText_CNF2O3 = "Fundzeit anzeigen"
+    FarmText_CNF2O4 = "Fundentfernung anzeigen"
+    FarmText_CNF2O5 = "Fundhäufigkeit anzeigen"
+    FarmText_CNF3FO = "entfernte Stellen abblenden"
+    FarmText_CNF3ET = "Suchfertigkeit berücksichtigen"
+    FarmText_CNF3DA = "anonyme Stellen anzeigen"
+    FarmText_CNF3MI = "untersuchte Stellen markieren"
+    FarmText_CNF3S1 = "Entfernung: %d m"
+    FarmText_CNF3S2 = "Sichtbarkeit: %d%%"
+    FarmText_CNF3S3 = "Suchradius: %d m"
+    FarmText_CNF3S4 = "Transparenz: %d%%"
+    FarmText_CNF3S5 = "Untersuchen: %d m"
+    FarmText_CNF3S6 = "Abblenden: %d%%"
+    FarmText_CNF3S7 = "Aufblenden: %d s"
+    FarmText_CNF3O1 = "bei Annäherung zu Suchicon wechseln"
+    FarmText_CNF3O2 = "wenn Suche aktiv ist"
+    FarmText_CNF3O3 = "anonyme Stellen rot färben"
+    FarmText_CNF3O4 = "nahe Stellen grün färben"
+    FarmText_CNF4ES = "Synchronisation aktivieren"
+    FarmText_CNF4PM = "Benachrichtigen bei eigenem Fund"
+    FarmText_CNF4O1 = "empfangene Funde zur Datenbank hinzufügen"
+    FarmText_CNF4O2 = "Benachrichtigen, wenn Fund gesendet wird"
+    FarmText_CNF4O3 = "Benachrichtigen, wenn Fund empfangen wird"
+    FarmText_CNF5EXP = "Existierende Profile:"
+    FarmText_CNF5NPN = "Neuer Profilname:"
+
+    FarmText_CLKL    = "|cffffff78Linksklick|r |cffffffff- Fundstellenanzeige aktivieren/deaktivieren|r"
+    FarmText_CLKLA   = "|cffffff78Linksklick + Umschalt/Strg/Alt|r |cffffffff- Häufigkeitsbericht öffnen|r"
+    FarmText_CLKR    = "|cffffff78Rechtsklick|r |cffffffff- Farmbericht öffnen|r"
+    FarmText_CLKRA   = "|cffffff78Rechtsklick + Umschalt/Strg/Alt|r |cffffffff- Konfigurationsfenster öffnen|r"
+
+    FarmText_CNFVM   = "Installierte Addon-Version: IlarosFarm "
+    FarmText_CNFLM   = "Installierte Sprach-Module: deDE, enGB/enUS"
+    FarmText_CNFGM   = "Unterstützte Spiel-Version: 3.3.5a (12340)"
+    FarmText_CNFDM   = "IlarosFarm wird von Tec's Ilaros WoW entwickelt und entspricht dem Inhalt dieses Servers. Eine Garantie für die Funktion wird nicht übernommen. Das gesamte Projekt ist Open Source und unterliegt der |cff00ff00GNU General Public License v3.0|r."
+    FarmText_CNFSW   = "Willkommensmeldung beim Start anzeigen"
+
+    -- Chat-Kommandos
+    FarmText_ON      = "an"
+    FarmText_OFF     = "aus"
+    FarmText_SLASH   = "|cffff38ffIlarosFarm-Kommandos:|r"
+    FarmText_COM     = "|cffffff78/Farm|r - Kurzbeschreibung der Kommandos"
+    FarmText_VER     = "|cffffff78/Farm v|r - Versionsinformation"
+    FarmText_OPT     = "|cffffff78/Farm k|r - Konfigurationsfenster öffnen"
+    FarmText_FRW     = "|cffffff78/Farm l|r - Farmbericht öffnen"
+    FarmText_DRW     = "|cffffff78/Farm h|r - Häufigkeitsbericht öffnen"
+    FarmText_MINI    = "|cffffff78/Farm m|r - Fundstellen auf Minikarte anzeigen/ausblenden"
+    FarmText_WRLD    = "|cffffff78/Farm w|r - Fundstellen auf Weltkarte anzeigen/ausblenden"
+    FarmText_CMDH    = "|cffffff78/Farm p|r - Pflanzen-Fundstellen anzeigen/ausblenden"
+    FarmText_CMDM    = "|cffffff78/Farm e|r - Erz-Fundstellen anzeigen/ausblenden"
+    FarmText_CMDF    = "|cffffff78/Farm f|r - Fisch-Fundstellen anzeigen/ausblenden"
+    FarmText_CMDT    = "|cffffff78/Farm s|r - Schatz-Fundstellen anzeigen/ausblenden"
+    FarmText_MXD     = "|cffffff78/Farm dis <max>|r - auf der Minikarte Fundstellen bis <max> Meter Entfernung anzeigen"
+    FarmText_MXN     = "|cffffff78/Farm num <max>|r - auf der Minikarte höchstens <max> Fundstellen anzeigen"
+
+    FarmText_COMs    = "|cffffff78/Farm|r |cffffffff- Kurzbeschreibung der Kommandos|r"
+    FarmText_VERs    = "Versionsinformation"
+    FarmText_OPTs    = "Konfigurationsfenster öffnen"
+    FarmText_FRWs    = "Farmbericht öffnen"
+    FarmText_DRWs    = "Häufigkeitsbericht öffnen"
+    FarmText_MINIs   = "Fundstellen auf Minikarte anzeigen/ausblenden"
+    FarmText_WRLDs   = "Fundstellen auf Weltkarte anzeigen/ausblenden"
+    FarmText_CMDHs   = "Pflanzen-Fundstellen anzeigen/ausblenden"
+    FarmText_CMDMs   = "Erz-Fundstellen anzeigen/ausblenden"
+    FarmText_CMDFs   = "Fisch-Fundstellen anzeigen/ausblenden"
+    FarmText_CMDTs   = "Schatz-Fundstellen anzeigen/ausblenden"
+    FarmText_MXDs    = "auf der Minikarte Fundstellen bis <max> Meter Entfernung anzeigen"
+    FarmText_MXNs    = "auf der Minikarte höchstens <max> Fundstellen anzeigen"
+
+    -- Tastaturbelegungsoptionen im Interface-Menü
+    BINDING_HEADER_ILAROSFARM = "IlarosFarm"
+    BINDING_NAME_ILAROSFARM_TOGGLE_OPTIONS_DIALOG = "Konfiguration ein-/ausblenden"
+    FarmText_KBD     = "Über das Tastaturbelegungsmenü kann dem Öffnen des Konfigurationsfensters von IlarosFarm eine eigene Taste zugeordnet werden."
+
+    -- Knöpfe
+    FarmText_BtnA = "Akzeptieren"
+    FarmText_BtnI = "Ignorieren"
+    FarmText_BtnO = "Bestätigen"
+    FarmText_BtnY = "Ja"
+    FarmText_BtnN = "Nein"
+    FarmText_BtnC = "Abbrechen"
+    FarmText_BtnK = "Optionen"
+    FarmText_BtnS = "Suche"
+    FarmText_BtnD = "Löschen"
+    FarmText_BtnNP = "Neu"
+    FarmText_BtnCP = "Kopie"
+    FarmText_BtnMS = "Liste auswählen"
+    FarmText_BtnUS = "Liste abwählen"
+    FarmText_BtnUA = "Alle abwählen"
+    FarmText_BtnSM = "Markierte senden"
+    FarmText_BtnDM = "Markierte löschen"
+    FarmText_BtnFS = "Fischschwarm"
+
+    -- Dialoge
+    FarmText_DLG1  = "Spieler zur Ausschlussliste hinzufügen"
+    FarmText_DLG2  = "Sollen alle von diesem Spieler gesendeten Stellen gelöscht werden?"
+    FarmText_DLG3  = "Bist du sicher? Das kann nicht rückgängig gemacht werden und wird %d Stelle(n) löschen."
+    FarmText_DLG4  = "%d Stelle(n) permenent aus der Datenbank gelöscht."
+    FarmText_DLG5  = "Häufigkeitsbericht"
+    FarmText_DLG6  = "Farmbericht"
+    FarmText_DLG7  = "Soll(en) %s Fundstelle(n) an %s gesendet werden?\n|cffff0000Das Farmberichtfenster des Empfängers muss offen sein!|r"
+    FarmText_DLG8  = "Soll(en) %s Fundstelle(n) gelöscht werden?"
+    FarmText_DLG9  = "%s möchte dir %d Fundstellen senden. Annehmen?"
+    FarmText_DLG10 = "Soll(en) %s Fundstelle(n) in Fischschwärme geändert werden?\nKann nur auf Fische angewendet werden, die als Schwarm vorkommen. Bitte beachte auch folgende Ersetzungen:\n\n|cffff0000Schwarzer Rumsey Rum|r\n>>>\n|cff00ff00Blutsegelwrackteile|r\n\n|cffff0000Wasserdichter Koffer|r\n>>>\n|cff00ff00Schiffswrackteile|r\n\n|cffff0000Wasserpartikel|r >>> |cff00ff00Reines Wasser|r\n\n|cffff0000Eisenbeschlagener Koffer|r\n>>>\n|cff00ff00Schwimmende Wrackteile|r\n\n|cffff0000Mithrilbeschlagener Koffer|r\n>>>\n|cff00ff00Treibende Wrackteile|r\n\n|cffff0000Gut versiegeltes Gehäuse|r\n>>>\n|cff00ff00Schwimmende Trümmer|r\n\n|cffff0000Elementarwasser|r\n>>>\n|cff00ff00Stelle mit Elementarwasser|r\n\n|cffff0000Dampfpumpentrümmer|r\n>>>\n|cff00ff00Treibgut der Dampfpumpe|r\n"
+
+    -- Farmbericht
+    FarmText_OPT1 = "Anwenden auf Typ"
+    FarmText_OPT2 = "Anwenden auf Region"
+    FarmText_OPT3 = "Anwenden auf Herkunft"
+    FarmText_LST1 = "Typ"
+    FarmText_LST2 = "Region"
+    FarmText_LST3 = "Entf."
+    FarmText_LST4 = "Herkunft"
+    FarmText_CMN  = "Markiert: "
+    FarmText_STP  = "Spieler"
+    FarmText_MRKN = "Einträge bleiben markiert, bis sie abgewählt werden, die Nutzeroberfläche neu geladen wird oder der Charakter ausloggt."
+    FarmText_TLK1 = "Anfrage ..."
+    FarmText_TLK2 = "Sendung ..."
+    FarmText_TLK3 = "Abgelehnt!"
+    FarmText_TLK4 = "Zeitüberschreitung."
+    FarmText_TLK5 = "Empfänger beschäftigt."
+    FarmText_TLK6 = "Beendet."
+    FarmText_TLK7 = "Erfolg!"
+    FarmText_TLK8  = "Empfangen: "
+    FarmText_TLK9  = "Abgeschlossen: "
+    FarmText_TLK10 = "Abgebrochen bei "
+    FarmText_TLK11 = "Anfang ..."
+    FarmText_TLK12 = "Sendung abgebrochen."
+    FarmText_TLK13 = "Gesendet: "
+    FarmText_UKNN  = "Unbekannte Stelle: "
+
+    -- Häufigkeitsbericht
+    FarmText_sALL = "alle"
+    FarmText_cALL = "Alle"
+    FarmText_LST5 = "Anzahl"
+    FarmText_LST6 = "Anteil %"
+
+    -- Minikarte
+    FarmText_MMH = "Fundstellen ausblenden"
+    FarmText_MMS = "Fundstellen anzeigen"
+
+    -- Chat-Benachrichtigungen
+    FarmText_Load = "IlarosFarm Version %s geladen."
+
+    FarmText_ADD  = "Fund von %s hinzugefügt"
+    FarmText_SND  = "Fund von %s an %s gesendet"
+    FarmText_RCV  = "Fund von %s in %s von %s empfangen (%s)"
+    FarmText_RAID = "Schlachtzug"
+    FarmText_PRTY = "Gruppe"
+    FarmText_GLD  = "Gilde"
+    FarmText_WSP  = "Flüstern"
+    FarmText_AND  = " und "
+
+    FarmText_FName  = "|cffffff00IlarosFarm für Tec's Ilaros WoW|r"
+    FarmText_FVer   = "|cffffff00Version %s|r"
+
+    FarmText_SMini  = "|cffffff78IlarosFarm:|r |cff00ff00Alle Fundstellenm auf der Minikarte wurden eingeblendet.|r"
+    FarmText_HMini  = "|cffffff78IlarosFarm:|r |cffff0000Alle Fundstellenm auf der Minikarte wurden ausgeblendet.|r"
+    FarmText_SWorld = "|cffffff78IlarosFarm:|r |cff00ff00Alle Fundstellenm auf der Weltkarte wurden eingeblendet.|r"
+    FarmText_HWorld = "|cffffff78IlarosFarm:|r |cffff0000Alle Fundstellenm auf der Weltkarte wurden ausgeblendet.|r"
+    FarmText_NDist  = "|cffffff78IlarosFarm:|r |cff00ff00Fundstellen werden bis maximal %s m Entfernung angezeigt.|r"
+    FarmText_NNumb  = "|cffffff78IlarosFarm:|r |cffff0000Es werden maximal %s Fundstellen gleichzeitig angezeigt.|r"
+    FarmText_STrad  = "|cffffff78IlarosFarm:|r |cff00ff00Suchstellen für %s wurden auf der Minikarte eingeblendet.|r"
+    FarmText_HTrad  = "|cffffff78IlarosFarm:|r |cffff0000Suchstellen für %s wurden auf der Minikarte ausgeblendet.|r"
+
+    -- Systemmeldungen
+    FarmText_SYS1 = "WARNuNG!\nIlarosFarm hat festgestellt, dass deine Datenbank-Version ungültig ist. Bitte wähle \"Akzeptieren\", um deine Datenbank zu leeren, oder \"Ignorieren\", wenn du versuchen willst, sie manuell zu reparieren."
+    FarmText_SYS2 = "Deine abgespeicherte IlarosFarm-Datenbank ist zu neu. Die gegenwärtige Datenbank wurde deaktiviert, bis eine passende Version von IlarosFarm installiert wurde."
+    FarmText_SYS3 = "IlarosFarm: Warnungen"
+    FarmText_SYS4 = "IlarosFarm konnte die folgenden Zonen nicht identifizieren: "..HIGHLIGHT_FONT_COLOR_CODE.."%s|r.\nWenn dies neue Zonen sind, ist das kein Problem.\nSind es keine neuen Zonen, "..HIGHLIGHT_FONT_COLOR_CODE.."sind deine Daten NICHT verloren!|r  Um darauf zugreifen zu können, ist aber eine neuere Version notwendig. Bis dann kannst du weiter normal Daten sammeln. Sie werden dann von der neuen Version mit den älteren Daten verbunden.\n\n"..HIGHLIGHT_FONT_COLOR_CODE.."Bitte erneuere IlarosFarm so schnell wie möglich.|r"
+end
