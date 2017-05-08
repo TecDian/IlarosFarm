@@ -144,6 +144,7 @@ if (region == "deDE") then
         ["Wasserfass"] = 3658, -- Water Barrel, auch 186234
         ["Weidentruhe"] = 184740, -- Wicker Chest
         -- Fische
+        ["Aufgedunsene Stachelkiemenforelle"] = 535313, -- Bloated Barbed Gill Trout
         ["Boreanische Galeere"] = 541805, -- Borean Man O' War
         ["Deviatfisch"] = 506522, -- Deviate Fish
         ["Dunkelklauenhummer"] = 513888, -- Darkclaw Lobster
@@ -157,8 +158,11 @@ if (region == "deDE") then
         ["Goldener Stachelflosser"] = 527438, -- Golden Darter
         ["Grimmiger Flusskrebs"] = 527439, -- Furious Crawdad
         ["Großer roher Machtfisch"] = 513893, -- Large Raw Mightfish
+        ["Größter Matschflosser der Welt"] = 534868, -- World's Largest Mudfish
         ["Imperialer Mantarochen"] = 541802, -- Imperial Manta Ray
+        ["Krokiliskenbaby"] = 534864, -- Baby Crocolisk
         ["Mondlichtsepia"] = 541801, -- Moonglow Cuttlefish
+        ["Monströser Teufelsblutschnapper"] = 534867, -- Monstrous Felblood Snapper
         ["Muschelrückengroppe"] = 541806, -- Musselback Sculpin
         ["Nesselfisch"] = 541813, -- Nettlefish
         ["Öliges Schwarzmaul"] = 506358, -- Oily Blackmouth
@@ -171,6 +175,7 @@ if (region == "deDE") then
         ["Roher Sommerbarsch"] = 513756, -- Raw Summer Bass
         ["Roher Sonnenschuppenlachs"] = 513760, -- Raw Sunscale Salmon
         ["Roher Weisenfisch"] = 521071, -- Raw Sagefish
+        ["Schwarzer Stachelflosser"] = 534856, -- Blackfin Darter
         ["Stachelkiemenforelle"] = 527422, -- Barbed Gill Trout
         ["Steinschuppenaal"] = 513422, -- Stonescale Eel
         ["Tiefseemonsterbauch"] = 541800, -- Deep Sea Monsterbelly

@@ -1,7 +1,7 @@
 ## Interface: 30305
 ## Title: IlarosFarm
 ## Author: Ilaros
-## Version: 1.000
+## Version: 1.001
 ## Notes: Farmfundorte von Mineralien, Kräutern, Fischschwärmen und Schätzen auf der Landkarte
 ## SavedVariables: FarmConfig, FarmMarks, FarmRates, FarmIgnore, LibSwagData
 
